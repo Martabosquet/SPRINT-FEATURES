@@ -46,7 +46,7 @@
     display: flex;
     align-items: center;
     gap: var(--muygrande);
-    margin: var(--grande) 0;
+    margin: var(--muypequeño) 0;
   }
 
   .about-me p {flex: 2;}

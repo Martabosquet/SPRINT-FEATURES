@@ -4,7 +4,14 @@
     max-width: 1200px;margin: 0 auto;
   }
 
-  h1{font-family: var(--titlesfont); font-size: var(--extragrande);color: var(--wes-blue)}
+  h1{
+    font-family: var(--titlesfont);
+    font-size: var(--extragrande);
+    color: var(--wes-blue);
+    display: flex;
+    justify-content: center;
+  }
+
   h2 {
     font-family: var(--titlesfont);
     margin: var(--grande) 0;

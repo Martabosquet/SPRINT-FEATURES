@@ -1,0 +1,12 @@
+/* RESPONSIVE PARA MÓVIL: PESTAÑA ABOUT ME - SOBRE MI */
+@media (max-width: 768px) {
+    .about-me {
+        flex-direction: column; /* En móvil, uno debajo del otro */
+        text-align: center;
+    }
+    
+    .about-image {
+        width: 80%;         /* La foto se hace más grande en móvil para que se vea bien */
+        order: -1;          /* Opcional: pone la foto arriba del texto en móviles */
+    }
+}

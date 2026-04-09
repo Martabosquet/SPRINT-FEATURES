@@ -1,0 +1,68 @@
+:root {
+  /*Fuentes*/
+      --titlesfont: "Bowlby One", sans-serif;
+      --bodyfont: "Roboto", system-ui;
+  
+  /*Pesos de fuente*/
+      --fw-light: 300;
+      --fw-regular: 400;
+      --fw-medium: 500;
+      --fw-semibold: 600;
+      --fw-bold: 700;
+
+  /* Tamaños de fuente */
+      --fs-xs: 0.75rem;      /* 12px */
+      --fs-sm: 0.875rem;     /* 14px */
+      --fs-base: 1rem;       /* 16px */
+      --fs-lg: 1.125rem;     /* 18px */
+      --fs-xl: 1.25rem;      /* 20px */
+      --fs-2xl: 1.5rem;      /* 24px */
+      --fs-3xl: 1.875rem;    /* 30px */
+      --fs-4xl: 2.25rem;     /* 36px */
+      --fs-5xl: 3rem;        /* 48px */
+
+  /*Tamaños para bordes y espaciados*/
+      --muypequeño: 1px;
+      --pequeño: 5px;
+      --normal: 10px;
+      --grande: 15px;
+      --muygrande: 20px;
+      --extragrande: 40px;
+      --spacing-xs: 0.5rem;
+      --spacing-sm: 1rem;
+      --spacing-md: 1.5rem;
+      --spacing-lg: 2rem;
+      --spacing-xl: 3rem;
+      --spacing-2xl: 4rem;
+
+  /* Transiciones */
+      --transition-fast: 0.2s ease;
+      --transition-base: 0.3s ease;
+      --transition-slow: 0.5s ease;
+
+  /*Paleta de colores */
+      --links: #0000EE;
+    /*MODO CLARO*/
+        --background: #fff6e9;
+        --text: #434343;
+        --wes-pink: #ffe8e6;
+        --wes-yellow: #f8e1a1;
+        --wes-blue: #00b2a3;
+        --wes-orange: #e09364;
+        --card-bg: rgba(255, 255, 255, 0.9);
+        --nav-bg: rgba(255, 255, 255, 0.9);
+        --shadow-light: rgba(0, 0, 0, 0.1);
+        --shadow-medium: rgba(0, 0, 0, 0.2);
+
+    /*MODO OSCURO*/
+        --backgrounddark: #0f0f0f;
+        --textdark: #e8e8e8;
+        --wes-pinkdark: #8b3a38;
+        --wes-yellowdark: #7a6a2e;
+        --wes-bluedark: #00d9c4;
+        --wes-orangedark: #d97f3e;
+        --card-bgdark: rgba(30, 30, 30, 0.9);
+        --nav-bgdark: rgba(20, 20, 20, 0.95);
+        --shadow-lightdark: rgba(0, 0, 0, 0.3);
+        --shadow-mediumdark: rgba(0, 0, 0, 0.5);
+}

@@ -27,12 +27,27 @@
   margin-bottom: var(--normal);
 }
 
-.tag {
+.skill-tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--pequeño);
+}
+
+.skill-tags .tag {
+
   background-color: var(--wes-blue);
+  border: var(--muypequeño) solid var(--wes-yellow);
   color: white;
-  padding: var(--muypequeño) var(--pequeño);
+  padding: var(--pequeño) var(--pequeño);
   border-radius: var(--pequeño);
   font-size: small;
+}
+
+.skill-level {
+  margin-top: var(--normal);
+  font-weight: var(--fw-semibold);
+  color: var(--wes-orange);
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------*/

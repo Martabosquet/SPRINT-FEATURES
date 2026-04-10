@@ -105,7 +105,8 @@
     display: flex;
     justify-content: space-around;
     gap: var(--muygrande);
-    background-color: var(--nav-bg);
+    background: linear-gradient(90deg, var(--wes-pink) 0%, var(--wes-yellow) 100%);
+    color: var(--wes-blue);
     font-family: var(--bodyfont);
     font-weight: var(--fw-semibold);
     padding: var(--muygrande);
@@ -130,20 +131,8 @@
   width: 100%;
   height: 3px;
   background-color: var(--wes-blue);
-  border-radius: 2px;
+  border-radius: var(--pequeño);
   transition: all var(--transition-base);
-  }
-
-  @media (max-width: 768px) {
-
-    /* Ocultar menú y mostrar hamburguesa */
-    .nav-links {
-      display: none;
-    }
-    
-    .hamburger {
-      display: flex;
-    }
   }
 
 /* ANIMACIÓN CORAZÓN HEARTBEAT*/

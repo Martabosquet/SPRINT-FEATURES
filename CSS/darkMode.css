@@ -1,0 +1,206 @@
+/* DARK MODE STYLES - Aplicadas cuando body tiene la clase dark-mode */
+
+body.dark-mode {
+  background-color: var(--backgrounddark);
+  color: var(--textdark);
+}
+
+/* HEADER Y NAVEGACIÓN */
+body.dark-mode header {
+  background: linear-gradient(90deg, var(--wes-pinkdark) 0%, var(--wes-yellowdark) 100%);
+}
+
+body.dark-mode .nav-links {
+  background: linear-gradient(90deg, var(--wes-pinkdark) 0%, var(--wes-yellowdark) 100%);
+  color: var(--wes-bluedark);
+}
+
+body.dark-mode .hamburger span {
+  background-color: var(--wes-bluedark);
+}
+
+body.dark-mode .logo {
+  color: var(--textdark);
+}
+
+/* TITULOS */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: var(--wes-bluedark);
+}
+
+body.dark-mode h2 {
+  border-color: var(--wes-yellowdark);
+}
+
+/* CARDS - SKILLS */
+body.dark-mode .skill-card {
+  background: linear-gradient(145deg, var(--card-bgdark), rgba(122, 106, 46, 0.05));
+  border-color: var(--wes-yellowdark);
+  box-shadow: 0 4px 15px var(--shadow-lightdark);
+}
+
+body.dark-mode .skill-card:hover {
+  box-shadow: 0 8px 25px var(--shadow-mediumdark);
+}
+
+body.dark-mode .skill-level {
+  color: var(--wes-orangedark);
+}
+
+body.dark-mode .skill-tags .tag {
+  background-color: var(--wes-bluedark);
+  border-color: var(--wes-yellowdark);
+  color: var(--textdark);
+}
+
+/* CARDS - EDUCATION */
+body.dark-mode .education-card {
+  background: linear-gradient(145deg, var(--card-bgdark), rgba(122, 106, 46, 0.05));
+  border-color: var(--wes-yellowdark);
+  box-shadow: 0 4px 15px var(--shadow-lightdark);
+}
+
+body.dark-mode .education-card:hover {
+  box-shadow: 0 8px 25px var(--shadow-mediumdark);
+}
+
+body.dark-mode .experience-date {
+  color: var(--wes-bluedark);
+}
+
+/* CARDS - EXPERIENCE ARTICLES */
+body.dark-mode article {
+  background: linear-gradient(145deg, var(--card-bgdark), rgba(0, 217, 196, 0.05));
+  border-color: var(--wes-orangedark);
+  border-left-color: var(--wes-yellowdark);
+  box-shadow: 0 4px 15px var(--shadow-lightdark);
+}
+
+body.dark-mode article:hover {
+  box-shadow: 0 8px 25px var(--shadow-mediumdark);
+}
+
+body.dark-mode article img {
+  box-shadow: 0 2px 5px var(--shadow-lightdark);
+}
+
+/* CARDS - VALUES */
+body.dark-mode .value-card {
+  background: linear-gradient(145deg, var(--card-bgdark), rgba(139, 58, 56, 0.05));
+  border-color: var(--wes-orangedark);
+  box-shadow: 0 4px 15px var(--shadow-lightdark);
+}
+
+/* BOTONES */
+body.dark-mode .btn {
+  background: linear-gradient(45deg, var(--wes-pinkdark), var(--wes-yellowdark));
+  border-color: var(--wes-bluedark);
+  color: var(--textdark);
+  box-shadow: 0 2px 5px var(--shadow-lightdark);
+}
+
+body.dark-mode .btn:hover {
+  background: linear-gradient(45deg, var(--wes-yellowdark), var(--wes-pinkdark));
+  box-shadow: 0 4px 10px var(--shadow-mediumdark);
+}
+
+/* TOGGLE DARK MODE */
+body.dark-mode .dark-mode-toggle {
+  background: var(--card-bgdark);
+  box-shadow: 0 2px 10px var(--shadow-lightdark);
+}
+
+/* FORMULARIO */
+body.dark-mode .tituloFormulario {
+  background: linear-gradient(90deg, var(--wes-pinkdark), var(--wes-bluedark));
+  color: var(--textdark);
+}
+
+body.dark-mode fieldset {
+  background: var(--card-bgdark);
+  border-color: var(--wes-orangedark);
+}
+
+body.dark-mode legend {
+  color: var(--wes-bluedark);
+}
+
+body.dark-mode input[type="text"],
+body.dark-mode input[type="email"],
+body.dark-mode select,
+body.dark-mode textarea {
+  background-color: var(--backgrounddark);
+  color: var(--textdark);
+  border-color: var(--wes-yellowdark);
+}
+
+body.dark-mode input[type="text"]:focus,
+body.dark-mode input[type="email"]:focus,
+body.dark-mode select:focus,
+body.dark-mode textarea:focus {
+  border-color: var(--wes-bluedark);
+  box-shadow: 0 0 10px var(--shadow-lightdark);
+  background-color: var(--nav-bgdark);
+}
+
+body.dark-mode label {
+  color: var(--textdark);
+}
+
+body.dark-mode form button {
+  background: linear-gradient(45deg, var(--wes-pinkdark), var(--wes-yellowdark));
+  color: var(--textdark);
+  box-shadow: 0 2px 5px var(--shadow-lightdark);
+}
+
+body.dark-mode form button:hover {
+  background: linear-gradient(45deg, var(--wes-yellowdark), var(--wes-pinkdark));
+  box-shadow: 0 4px 10px var(--shadow-mediumdark);
+}
+
+/* FOOTER */
+body.dark-mode footer {
+  background: linear-gradient(90deg, var(--wes-bluedark) 0%, var(--wes-orangedark) 100%);
+  color: var(--textdark);
+  border-top-color: var(--wes-yellowdark);
+  text-shadow: 
+    -.5px -.5px 0 var(--backgrounddark),  
+    .5px -.5px 0 var(--backgrounddark),
+    -.5px  .5px 0 var(--backgrounddark),
+    .5px  .5px 0 var(--backgrounddark);
+}
+
+/* IMAGENES */
+body.dark-mode .hero-image,
+body.dark-mode .about-image {
+  border-color: var(--wes-yellowdark);
+}
+
+/* ENLACES */
+body.dark-mode .mailto {
+  color: #99ccff;
+}
+
+/* ANIMACIÓN CORAZÓN EN DARK MODE */
+body.dark-mode .latido {
+  color: var(--wes-pinkdark);
+}
+
+/* SOMBRAS GENERALES EN ELEMENTOS */
+body.dark-mode header {
+  box-shadow: 0 4px 8px var(--shadow-lightdark);
+}
+
+body.dark-mode .nav-links {
+  box-shadow: 0 2px 10px var(--shadow-lightdark);
+}
+
+/* RESPONSIVE EN DARK MODE */
+@media (max-width: 768px) {
+  body.dark-mode #menu-navegacion.abierto .nav-links {
+    background-color: var(--nav-bgdark);
+    box-shadow: 0 2px 10px var(--shadow-lightdark);
+  }
+}

@@ -1,3 +1,30 @@
+/* Ocultar menú y mostrar hamburguesa */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: var(--normal);
+        position: absolute;
+        top: 100%;
+        right: var(--grande);
+        background: linear-gradient(90deg, var(--wes-pink) 0%, var(--wes-yellow) 100%);
+        box-shadow: 0 4px 8px var(--shadow-light);
+        border-radius: 0 0 var(--normal) var(--normal);
+    }
+
+    #menu-navegacion.abierto .nav-links {
+      display: flex;
+      justify-content: space-between;
+      background-color: var(--wes-yellow);
+      color: var(--wes-blue);
+    }
+    
+    .hamburger {
+      display: flex;
+    }
+  }
+
+
 /* RESPONSIVE PARA MÓVIL: PESTAÑA ABOUT ME - SOBRE MI */
 @media (max-width: 768px) {
     .about-me {
@@ -10,3 +37,24 @@
         order: -1;          /* Opcional: pone la foto arriba del texto en móviles */
     }
 }
+
+/* Menú activo en mobile */
+  .nav-links.active {
+    right: 0;
+    opacity: 1;
+  }
+  
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid var(--grey-light);
+  }
+  
+  .nav-links li:last-child {
+    border-bottom: none;
+  }
+  
+  .nav-links a::after {
+    display: none;
+  }

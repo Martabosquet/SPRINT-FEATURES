@@ -1,60 +1,117 @@
 /* Ocultar menú y mostrar hamburguesa */
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        gap: var(--normal);
-        position: absolute;
-        top: 100%;
-        right: var(--grande);
-        background: linear-gradient(90deg, var(--wes-pink) 0%, var(--wes-yellow) 100%);
-        box-shadow: 0 4px 8px var(--shadow-light);
-        border-radius: 0 0 var(--normal) var(--normal);
-    }
-
-    #menu-navegacion.abierto .nav-links {
-      display: flex;
-      justify-content: space-between;
-      background-color: var(--wes-yellow);
-      color: var(--wes-blue);
-    }
-    
-    .hamburger {
-      display: flex;
-    }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: var(--normal);
+    position: absolute;
+    top: 100%;
+    right: var(--grande);
+    background: linear-gradient(90deg, var(--wes-pink) 0%, var(--wes-yellow) 100%);
+    box-shadow: 0 4px 8px var(--shadow-light);
+    border-radius: 0 0 var(--normal) var(--normal);
   }
+
+  #menu-navegacion.abierto .nav-links {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--wes-yellow);
+    color: var(--wes-blue);
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
 
 
 /* RESPONSIVE PARA MÓVIL: PESTAÑA ABOUT ME - SOBRE MI */
 @media (max-width: 768px) {
-    .about-me {
-        flex-direction: column; /* En móvil, uno debajo del otro */
-        text-align: center;
-    }
-    
-    .about-image {
-        width: 80%;         /* La foto se hace más grande en móvil para que se vea bien */
-        order: -1;          /* Opcional: pone la foto arriba del texto en móviles */
-    }
+  .about-me {
+    flex-direction: column;
+    /* En móvil, uno debajo del otro */
+    text-align: center;
+  }
+
+  .about-image {
+    width: 80%;
+    /* La foto se hace más grande en móvil para que se vea bien */
+    order: -1;
+    /* Opcional: pone la foto arriba del texto en móviles */
+  }
 }
 
 /* Menú activo en mobile */
-  .nav-links.active {
-    right: 0;
-    opacity: 1;
+.nav-links.active {
+  right: 0;
+  opacity: 1;
+}
+
+.nav-links li {
+  width: 100%;
+  text-align: center;
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--grey-light);
+}
+
+.nav-links li:last-child {
+  border-bottom: none;
+}
+
+.nav-links a::after {
+  display: none;
+}
+
+/* RESPONSIVE PARA MÓVIL: PESTAÑA CHEATSHEETS --------------------------------------------------------------------------------------*/
+
+@media (max-width: 768px) {
+  .cheatsheet-nav {
+    flex-direction: column;
+    gap: var(--spacing-sm);
   }
-  
-  .nav-links li {
-    width: 100%;
-    text-align: center;
-    padding: var(--spacing-sm) 0;
-    border-bottom: 1px solid var(--grey-light);
+
+  .cheatsheet-nav a {
+    padding: var(--spacing-sm) var(--spacing-md);
   }
-  
-  .nav-links li:last-child {
-    border-bottom: none;
+
+  .cs-card {
+    padding: var(--spacing-md);
   }
-  
-  .nav-links a::after {
-    display: none;
+
+  .cs-code {
+    padding: var(--spacing-md);
   }
+
+  .cs-kbd {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: 0.8rem;
+  }
+
+  .cheatsheet-section h1 {
+    font-size: 2rem;
+  }
+}
+
+
+/* RESPONSIVE PARA MÓVIL: PESTAÑA RECURSOS --------------------------------------------------------------------------------------*/
+
+@media (max-width: 768px) {
+  .resources-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+
+  .tab-btn {
+    font-size: 0.85rem;
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+
+  .resource-card {
+    flex: 1 1 100%;
+  }
+
+  .resources-section h1 {
+    font-size: 2rem;
+  }
+}

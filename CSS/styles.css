@@ -8,17 +8,12 @@
 
 .skill-card {
   background: linear-gradient(145deg, var(--card-bg), rgba(248, 225, 161, 0.05));
-  border: 1px solid var(--wes-yellow);
+  border: var(--muypequeño) solid var(--wes-yellow);
+  border-left: var(--pequeño) solid var(--wes-orange);
   border-radius: var(--grande);
   padding: var(--muygrande);
-  box-shadow: 0 4px 15px var(--shadow-light);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px var(--grande) var(--shadow-light);
   text-align: center;
-}
-
-.skill-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px var(--shadow-medium);
 }
 
 .skill-icon img {
@@ -35,7 +30,6 @@
 }
 
 .skill-tags .tag {
-
   background-color: var(--wes-blue);
   border: var(--muypequeño) solid var(--wes-yellow);
   color: white;
@@ -53,82 +47,84 @@
 /*---------------------------------------------------------------------------------------------------------------------------*/
 /*PESTAÑA ABOUT: SOBRE MI*/
 
-  article ul {list-style-type: square;padding-left: var(--muygrande);}
-  article ol {list-style-type: upper-roman;padding-left: var(--muygrande);}
+article ul {
+  list-style-type: square;
+  padding-left: var(--muygrande);
+}
+
+article ol {
+  list-style-type: upper-roman;
+  padding-left: var(--muygrande);
+}
 
 
-  .about-me {
-    display: flex;
-    align-items: center;
-    gap: var(--muygrande);
-    margin: var(--muypequeño) 0;
-  }
+.about-me {
+  display: flex;
+  align-items: center;
+  gap: var(--muygrande);
+  margin: var(--muypequeño) 0;
+}
 
-  .about-me p {flex: 2;}
+.about-me p {
+  flex: 2;
+}
 
-  .about-image {
-    flex: 1; 
-    max-width: 400px;
-    height: auto;
-    border-radius: var(--grande);
-    box-shadow: 0 4px 10px var(--shadow-light);
-  }
+.about-image {
+  flex: 1;
+  max-width: 400px;
+  height: auto;
+  border-radius: var(--grande);
+  box-shadow: 0 4px 10px var(--shadow-light);
+}
 
 /* PESTAÑA ABOUT: EDUCACIÓN */
-  .education-list {
-    list-style: none;
-    padding: 0;
-    margin-top: var(--grande);
-  }
+.education-list {
+  list-style: none;
+  padding: 0;
+  margin-top: var(--grande);
+}
 
-  .education-card {
-    background: linear-gradient(145deg, var(--card-bg), rgba(248, 225, 161, 0.05));
-    border: 1px solid var(--wes-yellow);
-    border-radius: var(--grande);
-    padding: var(--muygrande);
-    margin-bottom: var(--normal);
-    box-shadow: 0 4px 15px var(--shadow-light);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+.education-card {
+  background: linear-gradient(145deg, var(--card-bg), rgba(248, 225, 161, 0.05));
+  border: var(--muypequeño) solid var(--wes-yellow);
+  border-radius: var(--grande);
+  padding: var(--muygrande);
+  margin-bottom: var(--normal);
+  box-shadow: 0 4px var(--grande) var(--shadow-light);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-  .education-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px var(--shadow-medium);
-  }
+.education-card:hover {
+  transform: translateY(-var(--pequeño));
+  box-shadow: 0 8px 25px var(--shadow-medium);
+}
 
-  .experience-date {
-    color: var(--wes-blue);
-    font-weight: var(--fw-semibold);
-    margin-bottom: var(--pequeño);
-  }
-    
-/*PESTAÑA ABOUT: Diseño EXPERIENCIA LABORAL */
+.experience-date {
+  color: var(--wes-blue);
+  font-weight: var(--fw-semibold);
+  margin-bottom: var(--pequeño);
+}
 
-  article {
-    background: linear-gradient(145deg, var(--card-bg), rgba(0, 178, 163, 0.05));
-    border: 2px solid var(--wes-orange);
-    border-left: 8px solid var(--wes-yellow);
-    border-radius: var(--grande);
-    padding: var(--muygrande);
-    margin-bottom: var(--normal);
-    box-shadow: 0 4px 15px var(--shadow-light);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    gap: var(--grande);
-  }
+/*PESTAÑA ABOUT: Diseño EXPERIENCIA PROFESIONAL */
 
-  article:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px var(--shadow-medium);
-  }
+.experiencia-profesional {
+  background: linear-gradient(145deg, var(--card-bg), rgba(0, 178, 163, 0.05));
+  border: 2px solid var(--wes-orange);
+  border-left: 8px solid var(--wes-yellow);
+  border-radius: var(--grande);
+  padding: var(--muygrande);
+  margin-bottom: var(--normal);
+  box-shadow: 0 4px var(--grande) var(--shadow-light);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: var(--grande);
+}
 
-  article img {
-    max-width: 100%;
-    height: auto;
-    border-radius: var(--normal);
-    box-shadow: 0 2px 5px var(--shadow-light);
-  }
+.experiencia-profesional:hover {
+  transform: translateY(-var(--pequeño));
+  box-shadow: 0 8px 25px var(--shadow-medium);
+}
 
 /* PESTAÑA ABOUT: VALUES CARDS */
 .values-list {
@@ -140,104 +136,280 @@
 
 .value-card {
   background: linear-gradient(145deg, var(--card-bg), rgba(255, 232, 230, 0.05));
-  border: 1px solid var(--wes-orange);
+  border: var(--muypequeño) solid var(--wes-orange);
   border-radius: var(--grande);
   padding: var(--muygrande);
-  box-shadow: 0 4px 15px var(--shadow-light);
+  box-shadow: 0 4px var(--grande) var(--shadow-light);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------*/
 /* PESTAÑA FORMULARIO: */
-  .tituloFormulario {
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(90deg, var(--wes-pink), var(--wes-blue));
-    border: var(--pequeño) solid var(--wes-yellow);
-    border-radius: var(--normal);
-    padding: var(--normal);
-    color: var(--text);
-    text-shadow: 1px 1px 2px var(--shadow-light);
-    transition: all 0.3s ease;
-  }
+.tituloFormulario {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(90deg, var(--wes-pink), var(--wes-blue));
+  border: var(--pequeño) solid var(--wes-yellow);
+  border-radius: var(--normal);
+  padding: var(--normal);
+  color: var(--text);
+  text-shadow: var(--muypequeño) var(--muypequeño) 2px var(--shadow-light);
+  transition: all 0.3s ease;
+}
 
-  /* PESTAÑA FORMULARIO: Form elements */
-  fieldset {
-    background: var(--card-bg);
-    border: 1px solid var(--wes-orange);
-    border-radius: var(--grande);
-    padding: var(--muygrande);
-    margin-bottom: var(--muygrande);
-    transition: all 0.3s ease;
-  }
+/* PESTAÑA FORMULARIO: Form elements */
+fieldset {
+  background: var(--card-bg);
+  border: var(--muypequeño) solid var(--wes-orange);
+  border-radius: var(--grande);
+  padding: var(--muygrande);
+  margin-bottom: var(--muygrande);
+  transition: all 0.3s ease;
+}
 
-  legend {
-    color: var(--wes-blue);
-    font-weight: var(--fw-bold);
-    padding: 0 var(--normal);
-  }
+legend {
+  color: var(--wes-blue);
+  font-weight: var(--fw-bold);
+  padding: 0 var(--normal);
+}
 
-  input[type="text"],
-  input[type="email"],
-  select,
-  textarea {
-    background-color: var(--background);
-    color: var(--text);
-    border: 1px solid var(--wes-yellow);
-    border-radius: var(--pequeño);
-    padding: var(--pequeño) var(--normal);
-    font-family: var(--bodyfont);
-    transition: all 0.3s ease;
-  }
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  background-color: var(--background);
+  color: var(--text);
+  border: var(--muypequeño) solid var(--wes-yellow);
+  border-radius: var(--pequeño);
+  padding: var(--pequeño) var(--normal);
+  font-family: var(--bodyfont);
+  transition: all 0.3s ease;
+}
 
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  select:focus,
-  textarea:focus {
-    outline: none;
-    border-color: var(--wes-blue);
-    box-shadow: 0 0 10px var(--shadow-light);
-    background-color: var(--nav-bg);
-  }
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--wes-blue);
+  box-shadow: 0 0 10px var(--shadow-light);
+  background-color: var(--nav-bg);
+}
 
-  textarea {
-    resize: vertical;
-  }
+textarea {
+  resize: vertical;
+}
 
-  input[type="radio"],
-  input[type="checkbox"] {
-    accent-color: var(--wes-blue);
-    cursor: pointer;
-    margin-right: var(--pequeño);
-  }
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: var(--wes-blue);
+  cursor: pointer;
+  margin-right: var(--pequeño);
+}
 
-  label {
-    color: var(--text);
-  }
+label {
+  color: var(--text);
+}
 
-  form button {
-    padding: var(--normal) var(--muygrande);
-    margin-right: var(--normal);
-    margin-top: var(--normal);
-    background: linear-gradient(45deg, var(--wes-pink), var(--wes-yellow));
-    color: var(--text);
-    border: none;
-    border-radius: var(--grande);
-    font-weight: var(--fw-medium);
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 5px var(--shadow-light);
-  }
+form button {
+  padding: var(--normal) var(--muygrande);
+  margin-right: var(--normal);
+  margin-top: var(--normal);
+  background: linear-gradient(45deg, var(--wes-pink), var(--wes-yellow));
+  color: var(--text);
+  border: none;
+  border-radius: var(--grande);
+  font-weight: var(--fw-medium);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px var(--pequeño) var(--shadow-light);
+}
 
-  /* PESTAÑA FORMULARIO: Hover effect for buttons en pestaña formulario*/
-  form button:hover {
-    background: linear-gradient(45deg, var(--wes-yellow), var(--wes-pink));
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px var(--shadow-medium);
-  }
+/* PESTAÑA FORMULARIO: Hover effect for buttons en pestaña formulario*/
+form button:hover {
+  background: linear-gradient(45deg, var(--wes-yellow), var(--wes-pink));
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px var(--shadow-medium);
+}
 
-  form button:active {
-    transform: translateY(0);
-  }
+form button:active {
+  transform: translateY(0);
+}
 
 /*---------------------------------------------------------------------------------------------------------------------------*/
+/* PESTAÑA CHEATSHEETS */
+
+#cheatsheets-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--grande);
+  margin-top: var(--grande);
+}
+
+.cheatsheet-card {
+  background: linear-gradient(145deg, var(--card-bg), rgba(248, 225, 161, 0.05));
+  border: var(--muypequeño) solid var(--wes-yellow);
+  border-radius: var(--grande);
+  padding: var(--muygrande);
+  box-shadow: 0 4px var(--grande) var(--shadow-light);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.cheatsheet-card:hover {
+  transform: translateY(-var(--pequeño));
+  box-shadow: 0 8px 25px var(--shadow-medium);
+  border: var(--muypequeño) solid var(--wes-orange);
+  border-left: var(--pequeño) solid var(--wes-yellow);
+}
+
+/* PESTAÑAS INDIVIDUALES CHEATSHEETS */
+
+.cheatsheet-hero {
+  background-color: var(--nav-bg);
+  border: var(--pequeño) solid var(--wes-yellow);
+  border-radius: var(--grande);
+  padding: var(--grande);
+  margin-bottom: var(--muygrande);
+  transition: all 0.3s ease;
+}
+
+.cs-badge {
+  background-color: var(--wes-blue);
+  color: white;
+  padding: var(--pequeño) var(--normal);
+  border-radius: var(--normal);
+}
+
+.cheatsheet-content {
+  background-color: var(--nav-bg);
+  border: var(--pequeño) solid var(--wes-yellow);
+  border-radius: var(--grande);
+  padding: var(--grande);
+  margin-bottom: var(--muygrande);
+  transition: all 0.3s ease;
+}
+
+.cs-code {
+  background-color: var(--nav-bg);
+  border: var(--muypequeño) solid var(--wes-yellow);
+  border-left: var(--pequeño) solid var(--wes-orange);
+  border-radius: var(--grande);
+  padding: var(--muygrande);
+  margin-bottom: var(--muygrande);
+  overflow-x: auto;
+}
+
+.cs-mini {
+  padding-bottom: var(--normal);
+  font-style: italic;
+}
+
+.cs-kbd {
+  background-color: var(--nav-bg);
+  border: var(--muypequeño) solid var(--wes-orange);
+  border-radius: var(--pequeño);
+  padding: var(--pequeño) var(--normal);
+  font-family: var(--bodyfont);
+  transition: all 0.3s ease;
+}
+
+.cs-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.cs-list li {
+  padding-left: var(--muygrande);
+  margin-bottom: var(--normal);
+  position: relative;
+}
+
+.cs-list li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: var(--wes-blue);
+  font-weight: 700;
+}
+
+/* PESTAÑA RECURSOS --------------------------------------------------------------------------------------*/
+
+.resources-image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--grande);
+  margin-bottom: var(--muygrande);
+}
+
+.resources-section h1 {
+  margin-top: var(--extragrande);
+  margin-bottom: var(--grande);
+}
+
+.resource-category {
+  margin-bottom: var(--muygrande);
+  border: var(--muypequeño) solid var(--wes-yellow);
+  border-radius: var(--grande);
+  padding: var(--grande);
+}
+
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--grande);
+}
+
+.resource-card {
+  background-color: var(--nav-bg);
+  border: var(--muypequeño) solid var(--wes-yellow);
+  border-left: var(--pequeño) solid var(--wes-orange);
+  border-radius: var(--grande);
+  padding: var(--grande);
+  transition: transform 0.3s ease;
+}
+
+.resource-card:hover {
+  transform: translateX(var(--pequeño));
+  border: var(--muypequeño) solid var(--wes-orange);
+  border-left: var(--pequeño) solid var(--wes-yellow);
+}
+
+
+/* PESTAÑA RECURSOS: Hover effect for buttons en pestaña recursos*/
+
+.resources-tabs {
+  padding: var(--grande);
+}
+
+.tab-btn {
+  background: var(--nav-bg);
+  border: var(--muypequeño) solid var(--wes-yellow);
+  border-radius: var(--normal);
+  padding: var(--normal) var(--muygrande);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  background: var(--wes-blue);
+  color: white;
+}
+
+.tab-btn.active {
+  background: var(--wes-orange);
+  color: white;
+  border-color: var(--wes-yellow);
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--grande);
+}

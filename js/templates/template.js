@@ -6,7 +6,7 @@ const header = `
             <li><a href="./about.html">ABOUT</a></li>
             <li><a href="./index.html#skills">SKILLS</a></li>
             <li><a href="./index.html#cheatsheets">CHEATSHEETS</a></li>
-            <li><a href="./index.html#recursos">RECURSOS</a></li>
+            <li><a href="./recursos.html">RECURSOS</a></li>
             <li><a href="./contacto.html">CONTACTO</a></li>
         </ul>
     </nav>
@@ -31,6 +31,6 @@ const footer = `
 `;
 
 export {
-  header,
-  footer
+    header,
+    footer
 };

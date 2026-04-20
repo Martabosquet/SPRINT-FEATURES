@@ -1,97 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Página web personal de Marta Bosquet - Proyecto Programación" />
-    <link rel="icon" href="https://res.cloudinary.com/dyi6fhh5r/image/upload/v1773144999/Image_rtju96rtju96rtju_jjk6dn.png" type="image/x-icon" />
-<!-- FUENTES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<!-- ESTILOS CSS -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/genericos.css">
-    <link rel="stylesheet" href="css/root.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/darkMode.css">
-<!-- TITULO -->    
-    <title>Marta Bosquet | Mi sitio web</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Página web personal de Marta Bosquet - Proyecto Programación" />
+  <link rel="icon"
+    href="https://res.cloudinary.com/dyi6fhh5r/image/upload/v1773144999/Image_rtju96rtju96rtju_jjk6dn.png"
+    type="image/x-icon" />
+  <!-- FUENTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- ESTILOS CSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/genericos.css">
+  <link rel="stylesheet" href="css/root.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/darkMode.css">
+  <!-- TITULO -->
+  <title>Marta Bosquet | Mi sitio web</title>
 </head>
+
 <body>
-    <header></header>
-    <main>
-      <h1 class="tituloFormulario">FORMULARIO DE CONTACTO</h1>
-      <form action="#" method="POST">
-        <fieldset>
-          <legend>Datos Personales</legend>
-          <p>
-            <label for="nombreApellidos">Nombre y apellidos:</label>
-            <input type="text" id="nombreApellidos" name="nombreApellidos" placeholder="Nombre   Apellido1   Apellido2  " size="30" required>
-          </p>
-          <p>
-            <label for="email">Email de contacto:</label>
-            <input type="email" id="email" name="email" placeholder="correo@correo.xxx" required>
-          </p>
-          <p>
+  <header></header>
+  <main>
+    <h1 class="tituloFormulario">FORMULARIO DE CONTACTO</h1>
+    <form action="https://formsubmit.co/martabosquetlauci@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Nueva solicitud desde la web">
+      <input type="text" name="_honey" style="display:none">
+      <input type="hidden" name="_captcha" value="false">
+      <fieldset>
+        <legend>Datos Personales</legend>
+        <p>
+          <label for="nombreApellidos">Nombre y apellidos:</label>
+          <input type="text" id="nombreApellidos" name="nombreApellidos" placeholder="Nombre   Apellido1   Apellido2  "
+            size="30" required>
+        </p>
+        <p>
+          <label for="email">Email de contacto:</label>
+          <input type="email" id="email" name="email" placeholder="correo@correo.xxx" required>
+        </p>
+        <p>
           <label for="asunto">Asunto:</label>
           <input type="text" id="asunto" name="asunto" required>
-          </p>
-        </fieldset>
-        <fieldset>
-          <legend>Bootcamp y nivel de experiencia:</legend>
-          <label for="curso">Selecciona el Bootcamp que estás cursando:</label><br>
-          <select id="curso" name="curso_interes" required>
-            <option value="" disabled selected>-- Por favor, elige una opción --</option>
-            <option value="fs">Full Stack Web Development</option>
-            <option value="ds">Data Science & AI</option>
-            <option value="cy">Ciberseguridad</option>
-          </select>
-          <div>
-            <input
-              type="radio"
-              id="nivel-principiante"
-              name="nivel"
-              value="principiante"
-            />
-            <label for="nivel-principiante">Principiante</label>
-          </div>
-          <div>
-            <input
-              type="radio"
-              id="nivel-intermedio"
-              name="nivel"
-              value="intermedio"
-            />
-            <label for="nivel-intermedio">Intermedio</label>
-          </div>
-          <div>
-            <input
-              type="radio"
-              id="nivel-avanzado"
-              name="nivel"
-              value="avanzado"
-            />
-            <label for="nivel-avanzado">Avanzado</label>
-          </div>
-        </fieldset>      
-        <fieldset>
-          <legend>Opciones de contacto</legend>
-          <p>
-            <input type="checkbox" id="promo" name="promo" value="si">
-            <label for="promo">Acepto recibir ofertas por email</label>
-          </p>
-          <p>
-            <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje" rows="4" cols="30" placeholder="Comentarios adicionales" required></textarea>
-          </p>
-        </fieldset>
-        <button type="submit">Enviar</button>
-        <button type="reset">Limpiar formulario y empezar de nuevo</button>
-      </form>
-    </main>
-    <footer></footer>
-    <script type="module" src="./js/main.js"></script>
-  </body>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Bootcamp y nivel de experiencia:</legend>
+        <label for="curso">Selecciona el Bootcamp que estás cursando:</label><br>
+        <select id="curso" name="curso_interes" required>
+          <option value="" disabled selected>-- Por favor, elige una opción --</option>
+          <option value="fs">Full Stack Web Development</option>
+          <option value="ds">Data Science & AI</option>
+          <option value="cy">Ciberseguridad</option>
+        </select>
+        <div>
+          <input type="radio" id="nivel-principiante" name="nivel" value="principiante" />
+          <label for="nivel-principiante">Principiante</label>
+        </div>
+        <div>
+          <input type="radio" id="nivel-intermedio" name="nivel" value="intermedio" />
+          <label for="nivel-intermedio">Intermedio</label>
+        </div>
+        <div>
+          <input type="radio" id="nivel-avanzado" name="nivel" value="avanzado" />
+          <label for="nivel-avanzado">Avanzado</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Opciones de contacto</legend>
+        <p>
+          <input type="checkbox" id="promo" name="promo" value="si">
+          <label for="promo">Acepto recibir ofertas por email</label>
+        </p>
+        <p>
+          <label for="mensaje">Mensaje:</label><br>
+          <textarea id="mensaje" name="mensaje" rows="4" cols="30" placeholder="Comentarios adicionales"
+            required></textarea>
+        </p>
+      </fieldset>
+      <button type="submit">Enviar</button>
+      <button type="reset">Limpiar formulario y empezar de nuevo</button>
+    </form>
+  </main>
+  <footer></footer>
+  <script type="module" src="./js/main.js"></script>
+</body>
+
 </html>

@@ -1,5 +1,5 @@
 const header = `
-    <a href="index.html" class="logo">MB</a>
+    <a href="./index.html" class="logo">MB</a>
     <nav id="menu-navegacion">
         <ul class="nav-links">
         <!-- BARRA NAVEGACIÓN PRINCIPAL FIJADA ARRIBA -->

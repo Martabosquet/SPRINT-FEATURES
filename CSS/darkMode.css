@@ -1,5 +1,3 @@
-/* DARK MODE STYLES - Aplicadas cuando body tiene la clase dark-mode */
-
 body.dark-mode {
   background-color: var(--backgrounddark);
   color: var(--textdark);

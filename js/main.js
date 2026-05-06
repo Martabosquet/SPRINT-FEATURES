@@ -4,6 +4,7 @@ import getSkills from './utils/skillsList.js';
 import menu from './utils/menu.js';
 import getCheatsheets from './utils/cheatsheetsList.js';
 import getResources from './utils/resourcesGenerator.js';
+import getWeather from './utils/weather.js';
 
 // Cargar templates de header y footer
 const siteHeader = document.querySelector('header');
@@ -23,3 +24,4 @@ menu();
 getSkills();
 getCheatsheets();
 getResources();
+getWeather();

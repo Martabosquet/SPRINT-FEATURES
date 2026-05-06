@@ -1,4 +1,61 @@
-/* PESTAÑA INDEX: SKILLS CARDS */
+/* PESTAÑA INDEX:*/
+
+main.index-layout {
+  max-width: 100%;
+}
+
+.index-layout {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--muygrande);
+  align-items: flex-start;
+}
+
+.main-articles {
+  flex: 3;
+  min-width: 0;
+}
+
+.weather-sidebar {
+  flex: 1;
+  position: sticky;
+  top: 100px;
+}
+
+.weatherContainer {
+  border: var(--muypequeño) solid var(--wes-yellow);
+  border-left: var(--pequeño) solid var(--wes-orange);
+  border-radius: var(--grande);
+  padding: var(--grande);
+  box-shadow: 0 4px var(--grande) var(--shadow-light);
+  text-align: center;
+  margin: var(--muygrande);
+}
+
+.weatherContainer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-icon p {
+  font-weight: bold;
+  font-size: var(--muygrande);
+}
+
+.weather-icon img {
+  width: 80px;
+  height: auto;
+}
+
+/*SKILLS CARDS */
 #skills-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -42,6 +99,14 @@
   margin-top: var(--normal);
   font-weight: var(--fw-semibold);
   color: var(--wes-orange);
+}
+
+/* PROYECTOS EN CURSO */
+
+.project-links {
+  display: flex;
+  gap: var(--grande);
+  margin-top: var(--grande);
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------*/
@@ -333,12 +398,56 @@ form button:active {
   font-weight: 700;
 }
 
+.cheatsheet-nav {
+  position: fixed;
+  top: 125px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  padding: var(--muygrande);
+  border-radius: var(--grande);
+  border: var(--muypequeño) solid var(--wes-orange);
+  box-shadow: 0 4px var(--normal) var(--shadow-light);
+  transition: all 0.3s ease;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 135px;
+  height: 300px;
+  border: 1px solid #ccc;
+}
+
+.cheatsheet-nav a {
+  margin: 5px 0;
+  color: var(--wes-blue);
+  text-decoration: none;
+}
+
+.cheatsheet-nav a:hover {
+  color: var(--wes-orange);
+  text-decoration: underline;
+}
+
+.cheatsheet-nav::-webkit-scrollbar {
+  width: 5px;
+  scrollbar-width: thin;
+}
+
+.cheatsheet-nav::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+.cheatsheet-nav::-webkit-scrollbar-thumb {
+  background: var(--wes-blue);
+}
+
 /* PESTAÑA RECURSOS --------------------------------------------------------------------------------------*/
 
 .resources-image {
-  width: 100%;
+  width: 550px;
   height: auto;
-  border-radius: var(--grande);
+  margin: auto;
   margin-bottom: var(--muygrande);
 }
 

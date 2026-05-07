@@ -10,10 +10,12 @@ const getSkills = () => {
 
   const skillsHTML = ninjaSkills.map(skill => `
     <article class="skill-card">
-      <div class="skill-icon">
-        <img src="${skill.icon}" alt="${skill.name}" width="48" height="48">
+      <div class="skill-header">
+        <div class="skill-icon">
+          <img src="${skill.icon}" alt="${skill.name}" width="48" height="48">
+        </div>
+        <h3>${skill.name}</h3>
       </div>
-      <h3>${skill.name}</h3>
       <p class="skill-level">${skill.level}</p>
       <p class="skill-description">${skill.description}</p>
       <div class="tags-container">

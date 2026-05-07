@@ -250,19 +250,22 @@ body.dark-mode .cs-kbd {
 /* DARK MODE FOR RESOURCES ----------------------------------------------------------*/
 
 body.dark-mode .tab-btn {
-  background-color: var(--nav-bgdark);
+  background-color: var(--card-bgdark);
   border-color: var(--wes-yellowdark);
+  color: var(--textdark);
+  backdrop-filter: blur(5px);
 }
 
 body.dark-mode .tab-btn:hover {
-  background-color: var(--wes-blue);
-  color: var(--textdark);
+  background-color: var(--wes-bluedark);
+  color: var(--backgrounddark);
 }
 
 body.dark-mode .tab-btn.active {
-  background-color: var(--wes-orange);
+  background-color: var(--wes-orangedark);
   color: var(--textdark);
-  border-color: var(--wes-yellowdark);
+  border-color: var(--wes-bluedark);
+  box-shadow: 0 0 15px rgba(217, 127, 62, 0.3);
 }
 
 body.dark-mode .resource-category {

@@ -7,6 +7,8 @@ const weatherIcon = document.getElementById("weather-icon");
 const weatherData = document.getElementById("weather-data");
 
 async function getWeather() {
+    if (!cityInfo || !weatherIcon || !weatherData) return;
+
     try {
         const response = await fetch(BASE_URL);
         if (!response.ok) {
@@ -35,7 +37,7 @@ function displayWeather(data) {
     weatherIcon.appendChild(conditionElement);
 
     const imageElement = document.createElement("img");
-    imageElement.src = current.condition.icon;
+    imageElement.src = `https:${current.condition.icon}`;
     weatherIcon.appendChild(imageElement);
 
     weatherData.innerHTML += `

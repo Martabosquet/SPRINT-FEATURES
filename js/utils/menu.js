@@ -3,6 +3,8 @@ const menu = () => {
     const menuNavegacion = document.getElementById("menu-navegacion")
     const navLinks = document.querySelectorAll(".nav-links") // la lista de los enlaces
 
+    if (!btnHamburguesa || !menuNavegacion) return;
+
     // Menú hamburguesa: abrir/cerrar
 
     btnHamburguesa.addEventListener("click", (e) => {

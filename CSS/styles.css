@@ -851,10 +851,8 @@ form button:active {
   border: 1px solid var(--wes-orange);
   border-left: var(--pequeño) solid var(--wes-yellow);
   box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
+  background: var(--glass-bg-orange);
 }
-
-
-/* PESTAÑA RECURSOS: Hover effect for buttons en pestaña recursos*/
 
 .resources-tabs {
   padding: var(--grande);

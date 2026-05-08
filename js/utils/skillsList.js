@@ -5,10 +5,7 @@ const getSkills = () => {
 
   if (!skillsContainer) return;
 
-  // Filtrar solo las skills dominadas
-  const ninjaSkills = skillsData.filter(skill => skill.state === "dominada");
-
-  const skillsHTML = ninjaSkills.map(skill => `
+  const skillsHTML = skillsData.map(skill => `
     <article class="skill-card">
       <div class="skill-header">
         <div class="skill-icon">

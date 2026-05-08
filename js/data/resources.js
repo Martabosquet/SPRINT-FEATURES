@@ -45,7 +45,7 @@ const resources = [
             { title: "Dribbble", url: "https://dribbble.com/", note: "Comunidad de diseñadores compartiendo trabajo en progreso o diseños finales para inspirar." },
             { title: "Behance", url: "https://www.behance.net/", note: "Plataforma de Adobe para exhibir y descubrir trabajos creativos de distintas disciplinas." }
         ]
-    }
+    },
 ];
 
 export default resources;

@@ -5,7 +5,6 @@ const resourcesSection = document.querySelector('.resources-section')
 const getResources = () => {
   if (!resourcesSection) return
 
-  // Crear las tabs
   const tabsHTML = `
         <div class="resources-tabs">
         ${resources.map((category, index) => `
@@ -16,7 +15,6 @@ const getResources = () => {
         </div>
     `
 
-  // Crear el contenido de cada tab
   const tabsContentHTML = `
     <div class="tabs-content">
       ${resources.map((category, index) => `
@@ -33,12 +31,9 @@ const getResources = () => {
       `).join('')}
     </div>
   `
-
-  // Insertar en el DOM
   resourcesSection.insertAdjacentHTML('beforeend', tabsHTML)
   resourcesSection.insertAdjacentHTML('beforeend', tabsContentHTML)
 
-  // Funcionalidad de las tabs
   const tabButtons = document.querySelectorAll('.tab-btn')
   const tabPanels = document.querySelectorAll('.tab-panel')
 
@@ -46,11 +41,9 @@ const getResources = () => {
     button.addEventListener('click', () => {
       const categoryIndex = button.dataset.category
 
-      // Remover active de todos
       tabButtons.forEach(btn => btn.classList.remove('active'))
       tabPanels.forEach(panel => panel.classList.remove('active'))
 
-      // Añadir active al seleccionado
       button.classList.add('active')
       document.querySelector(`[data-panel="${categoryIndex}"]`).classList.add('active')
     })

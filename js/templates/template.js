@@ -1,5 +1,12 @@
 const header = `
     <a href="./index.html" class="logo">MB</a>
+    
+    <div id="weather-header" class="weather-header">
+        <div id="weather-icon" class="weather-icon-header"></div>
+        <div id="city-info" class="city-info-header"></div>
+        <div id="weather-data" class="weather-data-header"></div>
+    </div>
+
     <nav id="menu-navegacion">
         <ul class="nav-links">
         <!-- BARRA NAVEGACIÓN PRINCIPAL FIJADA ARRIBA -->

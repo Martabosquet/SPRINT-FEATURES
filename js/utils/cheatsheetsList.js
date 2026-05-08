@@ -5,7 +5,6 @@ const getCheatsheets = () => {
 
   if (!cheatsheetsContainer) return;
 
-  //tengo que mostrar los cheatsheets que he preparado
   const cheatsheetsHTML = cheatsheets.map(cheatsheet => `
     <article class="cheatsheet-card">
       <a href="${cheatsheet.link}">

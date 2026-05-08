@@ -16,12 +16,11 @@ async function getWeather() {
         }
 
         const data = await response.json();
-
-        console.log(data);
         displayWeather(data);
 
     } catch (error) {
         console.error("Hubo un problema al obtener los datos:", error);
+        cityInfo.innerHTML = "<p>No se pudo cargar el clima ☁️</p>";
     }
 }
 

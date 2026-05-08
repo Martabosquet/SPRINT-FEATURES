@@ -36,7 +36,7 @@
   --normal: 10px;
   --grande: 15px;
   --muygrande: 20px;
-  --extragrande: 40px;
+  --extragrande: 35px;
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 1.5rem;
@@ -51,6 +51,7 @@
 
   /*Paleta de colores */
   --links: #0000EE;
+
   /*MODO CLARO*/
   --background: #fff6e9;
   --text: #434343;
@@ -62,23 +63,6 @@
   --nav-bg: rgba(255, 255, 255, 0.9);
   --shadow-light: rgba(0, 0, 0, 0.1);
   --shadow-medium: rgba(0, 0, 0, 0.2);
-
-  /*MODO OSCURO*/
-  --backgrounddark: #0f0f0f;
-  --textdark: #e8e8e8;
-  --wes-pinkdark: #8b3a38;
-  --wes-yellowdark: #7a6a2e;
-  --wes-bluedark: #00d9c4;
-  --wes-orangedark: #d97f3e;
-  --card-bgdark: rgba(30, 30, 30, 0.9);
-  --nav-bgdark: rgba(20, 20, 20, 0.95);
-  --shadow-lightdark: rgba(0, 0, 0, 0.3);
-  --shadow-mediumdark: rgba(0, 0, 0, 0.5);
-
-  /* Variables de utilidad (usadas en darkMode.css) */
-  --primary: var(--wes-blue);
-  --accent: var(--wes-orange);
-  --white: #ffffff;
 
   /* Diseño GRADIENTES: */
   --glass-bg-pink: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 232, 230, 0.9));
@@ -98,10 +82,11 @@ main {
 
 h1 {
   font-family: var(--titlesfont);
-  font-size: var(--extragrande);
   color: var(--wes-blue);
   display: flex;
+  font-size: var(--extragrande);
   justify-content: center;
+  margin-top: var(--pequeño);
 }
 
 h2 {
@@ -173,41 +158,17 @@ p {
   border: 2px solid var(--wes-blue);
   border-radius: var(--grande);
   background: linear-gradient(45deg, var(--wes-pink), var(--wes-yellow));
-  transition: all 0.3s ease;
   text-decoration: none;
   text-align: center;
   color: var(--text);
   box-shadow: 0 2px 5px var(--shadow-light);
-  transition: linear 0.3s;
+  transition: var(--transition-base);
 }
 
 .btn:hover {
   background: linear-gradient(45deg, var(--wes-orange) 0%, var(--wes-pink) 100%);
   color: var(--white);
   transition: linear 0.3s;
-}
-
-/*DARK MODE TOGGLE*/
-.dark-mode-toggle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: var(--muygrande);
-  transition: transform 0.3s ease;
-  padding: var(--pequeño);
-  position: fixed;
-  top: var(--grande);
-  left: var(--grande);
-  z-index: 20;
-  background: var(--card-bg);
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  box-shadow: 0 2px 10px var(--shadow-light);
-  margin-left: 100px;
 }
 
 /* Estilos para el header y la navegación */
@@ -231,8 +192,7 @@ header {
   gap: var(--muygrande);
   background: linear-gradient(90deg, var(--wes-pink) 0%, var(--wes-yellow) 100%);
   color: var(--wes-blue);
-  font-family: var(--bodyfont);
-  font-weight: var(--fw-semibold);
+  font-family: var(--titlesfont);
   padding: var(--muygrande);
   border-radius: var(--muygrande);
   backdrop-filter: blur(10px);
@@ -310,15 +270,12 @@ footer {
 
 /* PESTAÑA INDEX:---------------------------------------------------------------------------------------------------------*/
 
-main.index-layout {
-  max-width: 100%;
-}
-
 .index-layout {
   display: flex;
   justify-content: space-between;
   gap: var(--muygrande);
   align-items: flex-start;
+  max-width: 100%;
 }
 
 .main-articles {
@@ -626,19 +583,19 @@ form button {
   margin-top: var(--normal);
   background: linear-gradient(45deg, var(--wes-pink), var(--wes-yellow));
   color: var(--text);
-  border: none;
+  border: var(--muypequeño) solid var(--wes-orange);
   border-radius: var(--grande);
   font-weight: var(--fw-medium);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: var(--transition-base);
   box-shadow: 0 2px var(--pequeño) var(--shadow-light);
 }
 
-/* PESTAÑA FORMULARIO: Hover effect for buttons en pestaña formulario*/
 form button:hover {
   background: linear-gradient(45deg, var(--wes-yellow), var(--wes-pink));
   transform: translateY(-2px);
-  box-shadow: 0 4px 10px var(--shadow-medium);
+  box-shadow: 0 4px var(--normal) var(--shadow-medium);
+  transition: var(--transition-base);
 }
 
 form button:active {
@@ -780,7 +737,6 @@ form button:active {
   scroll-behavior: smooth;
   width: 135px;
   height: 300px;
-  border: 1px solid #ccc;
 }
 
 .cheatsheet-nav a {
@@ -945,16 +901,10 @@ form button:active {
   }
 }
 
-.nav-links.active {
-  right: 0;
-  opacity: 1;
-}
-
 .nav-links li {
   width: 100%;
   text-align: center;
   padding: var(--spacing-sm) 0;
-  border-bottom: 1px solid var(--grey-light);
 }
 
 .nav-links li:last-child {

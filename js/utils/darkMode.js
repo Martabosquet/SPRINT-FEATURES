@@ -1,41 +1,33 @@
 const darkMode = () => {
   const darkModeToggle = document.getElementById('darkModeToggle');
   const body = document.body;
-  
+
   if (!darkModeToggle) return;
-  
-  // Deshabilitar transiciones temporalmente para evitar flash al cargar
-  body.style.transition = 'none';
-  
-  // Obtener tema guardado en localStorage (Sirve para que, si el usuario elige 
-  // "modo oscuro", la próxima vez que entre en tu web, el navegador "recuerde" 
-  // su preferencia y no tenga que activarlo de nuevo.)
-  const savedTheme = localStorage.getItem('theme');
+
+  body.style.transition = 'none'; //evita flash al cargar
+
+  const savedTheme = localStorage.getItem('theme'); //recuerda el tema
   const isDarkMode = savedTheme === 'dark';
-  
-  // Función para actualizar icono
+
   const updateIcon = (isDark) => {
     const sunIcon = darkModeToggle.querySelector('.sun-icon');
     const moonIcon = darkModeToggle.querySelector('.moon-icon');
-    
+
     if (sunIcon && moonIcon) {
       sunIcon.style.display = isDark ? 'none' : 'block';
       moonIcon.style.display = isDark ? 'block' : 'none';
     }
   };
-  
-  // Estado inicial
+
   if (isDarkMode) {
     body.classList.add('dark-mode');
     updateIcon(true);
   }
-  
-  // Reactivar transiciones después de aplicar el estado inicial
+
   setTimeout(() => {
     body.style.transition = '';
   }, 0);
-  
-  // Event listener para el toggle
+
   darkModeToggle.addEventListener('click', () => {
     const isDark = body.classList.toggle('dark-mode');
     updateIcon(isDark);
@@ -43,4 +35,4 @@ const darkMode = () => {
   });
 };
 
-export default darkMode ;
+export default darkMode;
